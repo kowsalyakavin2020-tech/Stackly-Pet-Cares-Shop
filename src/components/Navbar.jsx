@@ -5,7 +5,7 @@ import './Navbar.css'
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [cartCount] = useState(3)
+  const [cartCount] = useState(0)
   const location = useLocation()
 
   useEffect(function() {

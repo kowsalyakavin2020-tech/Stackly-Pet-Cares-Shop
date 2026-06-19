@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import './Footer.css'
 
 function Footer() {
+  var baseUrl = window.location.origin + window.location.pathname
+
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -23,11 +25,23 @@ function Footer() {
                 Your one-stop destination for premium pet care products
                 and professional services. Trusted by 10,000+ pet owners worldwide.
               </p>
+              <div className="footer-location">
+                <span className="footer-location-icon">📍</span>
+                <span>123 Pet Street, Animal City, AC 12345, USA</span>
+              </div>
               <div className="footer-social">
-                <Link to="/404" className="social-btn"><i className="fab fa-facebook-f"></i></Link>
-                <Link to="/404" className="social-btn"><i className="fab fa-instagram"></i></Link>
-                <Link to="/404" className="social-btn"><i className="fab fa-twitter"></i></Link>
-                <Link to="/404" className="social-btn"><i className="fab fa-youtube"></i></Link>
+                <a href={baseUrl + '#/404'} target="_blank" rel="noreferrer" className="social-btn">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href={baseUrl + '#/404'} target="_blank" rel="noreferrer" className="social-btn">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href={baseUrl + '#/404'} target="_blank" rel="noreferrer" className="social-btn">
+                  <i className="fab fa-twitter"></i>
+                </a>
+                <a href={baseUrl + '#/404'} target="_blank" rel="noreferrer" className="social-btn">
+                  <i className="fab fa-youtube"></i>
+                </a>
               </div>
             </div>
 
@@ -59,7 +73,7 @@ function Footer() {
               <div className="newsletter-form">
                 <input type="email" placeholder="Enter your email" />
                 <button className="newsletter-btn">
-                  <span style={{fontSize: '14px'}}>➤</span>
+                  <i className="fas fa-paper-plane"></i>
                 </button>
               </div>
               <div className="footer-badges">

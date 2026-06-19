@@ -7,6 +7,7 @@ import Shop from './pages/Shop'
 import ServicesPage from './pages/ServicesPage'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Cart from './pages/Cart'
 import NotFound from './pages/NotFound'
 import './styles/globals.css'
 import './styles/animations.css'
@@ -21,6 +22,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

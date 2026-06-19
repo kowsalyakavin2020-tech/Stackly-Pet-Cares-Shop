@@ -1,7 +1,53 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 function NotFound() {
+  const [loading, setLoading] = useState(true)
+  const location = useLocation()
+
+  useEffect(function() {
+    setLoading(true)
+    var timer = setTimeout(function() {
+      setLoading(false)
+    }, 1500)
+    return function() { clearTimeout(timer) }
+  }, [location.key])
+
+  if (loading) {
+    return (
+      <div style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'var(--primary-dark)',
+        gap: '24px'
+      }}>
+        <div style={{
+          width: '64px',
+          height: '64px',
+          border: '4px solid rgba(255,255,255,0.2)',
+          borderTop: '4px solid #FFB347',
+          borderRadius: '50%',
+          animation: 'spin 0.8s linear infinite'
+        }}></div>
+        <p style={{
+          color: 'rgba(255,255,255,0.8)',
+          fontSize: '1rem',
+          fontFamily: 'Inter, sans-serif',
+          letterSpacing: '0.05em'
+        }}>Loading...</p>
+        <style>{`
+          @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+        `}</style>
+      </div>
+    )
+  }
+
   return (
     <main style={{
       minHeight: '100vh',

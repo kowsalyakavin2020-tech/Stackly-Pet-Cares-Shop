@@ -42,7 +42,7 @@ function Navbar() {
   return (
     <nav className={getNavClass()}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={function() { setMenuOpen(false) }}>
           <div className="logo-icon">
             <span style={{fontSize: '24px'}}>🐾</span>
           </div>
@@ -51,6 +51,7 @@ function Navbar() {
             <span className="logo-sub">Pet Cares and Shop</span>
           </div>
         </Link>
+
         <ul className={getMenuClass()}>
           {navLinks.map(function(link) {
             return (
@@ -66,23 +67,28 @@ function Navbar() {
             )
           })}
         </ul>
+
         <div className="navbar-actions">
-          <button className="nav-icon-btn" title="Search">
-            <span style={{fontSize: '16px'}}>🔍</span>
+          <button className="nav-icon-btn search-btn" title="Search">
+            <span style={{fontSize: '18px'}}>🔍</span>
           </button>
-          <button className="nav-icon-btn" title="Wishlist">
-            <span style={{fontSize: '16px'}}>♡</span>
+          <button className="nav-icon-btn wishlist-btn" title="Wishlist">
+            <span style={{fontSize: '18px'}}>♡</span>
           </button>
-          <button className="nav-icon-btn cart-btn" title="Cart">
-            <span style={{fontSize: '16px'}}>🛒</span>
+          <Link to="/cart" className="nav-icon-btn cart-btn" title="Cart">
+            <span style={{fontSize: '18px'}}>🛒</span>
             {cartCount > 0 && (
               <span className="cart-badge">{cartCount}</span>
             )}
-          </button>
+          </Link>
           <Link to="/shop" className="btn btn-primary nav-cta">
             Shop Now
           </Link>
-          <button className={getHamburgerClass()} onClick={function() { setMenuOpen(!menuOpen) }} title="Menu">
+          <button
+            className={getHamburgerClass()}
+            onClick={function() { setMenuOpen(!menuOpen) }}
+            title="Menu"
+          >
             <span></span>
             <span></span>
             <span></span>

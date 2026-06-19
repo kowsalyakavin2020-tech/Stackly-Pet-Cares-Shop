@@ -5,7 +5,7 @@ var categories = [
   {
     id: 1,
     name: 'Dogs',
-    image: '/images/dog.jpg',
+    image: 'images/dog.webp',
     icon: '🐕',
     count: '120+ Products',
     desc: 'Premium food, toys, grooming and more for your loyal companion',
@@ -15,7 +15,7 @@ var categories = [
   {
     id: 2,
     name: 'Cats',
-    image: '/images/cat.jpg',
+    image: 'images/cat.webp',
     icon: '🐈',
     count: '95+ Products',
     desc: 'Everything your feline friend needs to live their best life',
@@ -25,7 +25,7 @@ var categories = [
   {
     id: 3,
     name: 'Birds',
-    image: '/images/bird.jpg',
+    image: 'images/bird.webp',
     icon: '🦜',
     count: '60+ Products',
     desc: 'Cages, food, perches and accessories for your feathered friend',
@@ -35,7 +35,7 @@ var categories = [
   {
     id: 4,
     name: 'Fish',
-    image: '/images/fish.jpg',
+    image: 'images/fish.webp',
     icon: '🐠',
     count: '80+ Products',
     desc: 'Aquariums, filters, food and decor for aquatic life',

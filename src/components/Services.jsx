@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import './Services.css'
 
 var services = [
@@ -11,7 +11,7 @@ var services = [
     bg: '#FFF3EF',
     features: ['Bath and Dry', 'Haircut and Styling', 'Nail Trimming', 'Ear Cleaning'],
     price: 'From $25',
-    image: '/images/grooming.jpg',
+    image: 'images/grooming.webp',
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ var services = [
     bg: '#F0FAF4',
     features: ['Health Checkups', 'Vaccinations', 'Dental Care', 'Surgery'],
     price: 'From $40',
-    image: '/images/vet.jpg',
+    image: 'images/vet.webp',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ var services = [
     bg: '#FFF8EF',
     features: ['24/7 Supervision', 'Comfortable Beds', 'Play Time', 'Daily Updates'],
     price: 'From $35/night',
-    image: '/images/boarding.jpg',
+    image: 'images/boarding.webp',
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ var services = [
     bg: '#EFF9FF',
     features: ['Basic Obedience', 'Behavior Correction', 'Agility Training', 'Puppy Classes'],
     price: 'From $50',
-    image: '/images/training.jpg',
+    image: 'images/training.webp',
   },
 ]
 

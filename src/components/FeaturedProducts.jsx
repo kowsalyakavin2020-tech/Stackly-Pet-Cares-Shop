@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import './FeaturedProducts.css'
 
 var products = [
-  { id: 1, name: 'Premium Dog Food', category: 'Dogs', price: 29.99, oldPrice: 39.99, rating: 5, reviews: 128, image: '/images/food.jpg', tag: 'Best Seller', tagColor: '#F4845F' },
-  { id: 2, name: 'Cat Comfort Bed', category: 'Cats', price: 49.99, oldPrice: 69.99, rating: 4, reviews: 89, image: '/images/cat.jpg', tag: 'Sale', tagColor: '#52B788' },
-  { id: 3, name: 'Bird Perch Set', category: 'Birds', price: 19.99, oldPrice: null, rating: 5, reviews: 45, image: '/images/bird.jpg', tag: 'New', tagColor: '#FFB347' },
-  { id: 4, name: 'Aquarium Starter Kit', category: 'Fish', price: 89.99, oldPrice: 119.99, rating: 4, reviews: 67, image: '/images/fish.jpg', tag: 'Popular', tagColor: '#4FC3F7' },
-  { id: 5, name: 'Dog Chew Toys', category: 'Dogs', price: 14.99, oldPrice: null, rating: 5, reviews: 203, image: '/images/toys.jpg', tag: 'Best Seller', tagColor: '#F4845F' },
-  { id: 6, name: 'Cat Grooming Kit', category: 'Cats', price: 34.99, oldPrice: 44.99, rating: 4, reviews: 56, image: '/images/grooming.jpg', tag: 'Sale', tagColor: '#52B788' },
+  { id: 1, name: 'Premium Dog Food', category: 'Dogs', price: 29.99, oldPrice: 39.99, rating: 5, reviews: 128, image: 'images/food.webp', tag: 'Best Seller', tagColor: '#F4845F' },
+  { id: 2, name: 'Cat Comfort Bed', category: 'Cats', price: 49.99, oldPrice: 69.99, rating: 4, reviews: 89, image: 'images/cat.webp', tag: 'Sale', tagColor: '#52B788' },
+  { id: 3, name: 'Bird Perch Set', category: 'Birds', price: 19.99, oldPrice: null, rating: 5, reviews: 45, image: 'images/bird.webp', tag: 'New', tagColor: '#FFB347' },
+  { id: 4, name: 'Aquarium Starter Kit', category: 'Fish', price: 89.99, oldPrice: 119.99, rating: 4, reviews: 67, image: 'images/fish.webp', tag: 'Popular', tagColor: '#4FC3F7' },
+  { id: 5, name: 'Dog Chew Toys', category: 'Dogs', price: 14.99, oldPrice: null, rating: 5, reviews: 203, image: 'images/toys.webp', tag: 'Best Seller', tagColor: '#F4845F' },
+  { id: 6, name: 'Cat Grooming Kit', category: 'Cats', price: 34.99, oldPrice: 44.99, rating: 4, reviews: 56, image: 'images/grooming.webp', tag: 'Sale', tagColor: '#52B788' },
 ]
 
 var filters = ['All', 'Dogs', 'Cats', 'Birds', 'Fish']

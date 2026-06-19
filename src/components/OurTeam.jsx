@@ -6,7 +6,7 @@ var team = [
     id: 1,
     name: 'Dr. Sarah Johnson',
     role: 'Chief Veterinarian',
-    image: '/images/team1.jpg',
+    image: 'images/team1.webp',
     exp: '12 Years Experience',
     speciality: 'Small Animals',
     social: { facebook: '#', instagram: '#', linkedin: '#' }
@@ -15,7 +15,7 @@ var team = [
     id: 2,
     name: 'Dr. Michael Chen',
     role: 'Senior Vet Surgeon',
-    image: '/images/team2.jpg',
+    image: 'images/team2.webp',
     exp: '8 Years Experience',
     speciality: 'Surgery Specialist',
     social: { facebook: '#', instagram: '#', linkedin: '#' }
@@ -24,7 +24,7 @@ var team = [
     id: 3,
     name: 'Emma Williams',
     role: 'Head Groomer',
-    image: '/images/team1.jpg',
+    image: 'images/team1.webp',
     exp: '6 Years Experience',
     speciality: 'All Breeds',
     social: { facebook: '#', instagram: '#', linkedin: '#' }
@@ -33,7 +33,7 @@ var team = [
     id: 4,
     name: 'James Miller',
     role: 'Pet Trainer',
-    image: '/images/team2.jpg',
+    image: 'images/team2.webp',
     exp: '10 Years Experience',
     speciality: 'Behavior Expert',
     social: { facebook: '#', instagram: '#', linkedin: '#' }

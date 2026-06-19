@@ -72,7 +72,7 @@ function NewsletterCTA() {
 
           <div className="newsletter-image-side">
             <div className="newsletter-img-wrap">
-              <img src="/images/dog.webp" alt="Happy Pet" className="newsletter-img" />
+              <img src="images/dog.webp" alt="Happy Pet" className="newsletter-img" />
               <div className="newsletter-img-badge">
                 <span className="badge-number">10K+</span>
                 <span className="badge-text">Happy Subscribers</span>

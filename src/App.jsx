@@ -8,6 +8,8 @@ import ServicesPage from './pages/ServicesPage'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Cart from './pages/Cart'
+import Wishlist from './pages/Wishlist'
+import Search from './pages/Search'
 import NotFound from './pages/NotFound'
 import './styles/globals.css'
 import './styles/animations.css'
@@ -23,6 +25,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/404" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

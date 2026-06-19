@@ -69,12 +69,12 @@ function Navbar() {
         </ul>
 
         <div className="navbar-actions">
-          <button className="nav-icon-btn search-btn" title="Search">
+          <Link to="/search" className="nav-icon-btn search-btn" title="Search">
             <span style={{fontSize: '18px'}}>🔍</span>
-          </button>
-          <button className="nav-icon-btn wishlist-btn" title="Wishlist">
+          </Link>
+          <Link to="/wishlist" className="nav-icon-btn wishlist-btn" title="Wishlist">
             <span style={{fontSize: '18px'}}>♡</span>
-          </button>
+          </Link>
           <Link to="/cart" className="nav-icon-btn cart-btn" title="Cart">
             <span style={{fontSize: '18px'}}>🛒</span>
             {cartCount > 0 && (

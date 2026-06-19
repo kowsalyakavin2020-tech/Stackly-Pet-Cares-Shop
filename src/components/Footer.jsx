@@ -27,7 +27,8 @@ function Footer() {
               </p>
               <div className="footer-location">
                 <span className="footer-location-icon">📍</span>
-                <span>123 Pet Street, Animal City, AC 12345, USA</span>
+                <p>No.9, Ambika Complex, 1st Floor, Gokulam Colony, Karanaipudhuchery main road, Urapakkam, Chennai,
+Tamil Nadu, India - 603202</p>
               </div>
               <div className="footer-social">
                 <a href={baseUrl + '#/404'} target="_blank" rel="noreferrer" className="social-btn">

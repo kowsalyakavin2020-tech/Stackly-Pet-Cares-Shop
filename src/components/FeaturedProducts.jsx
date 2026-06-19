@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react'
+﻿import React, { useState, useEffect } from 'react'
 import './FeaturedProducts.css'
 
 var products = [
@@ -27,7 +27,7 @@ function ProductCard(props) {
   var product = props.product
   var discount = product.oldPrice ? Math.round((1 - product.price / product.oldPrice) * 100) : null
   return (
-    <div className="product-card reveal">
+    <div className="product-card">
       <div className="product-image-wrap">
         <img src={product.image} alt={product.name} className="product-image" />
         <span className="product-tag" style={{ background: product.tagColor }}>{product.tag}</span>
@@ -73,6 +73,16 @@ function FeaturedProducts() {
   var filtered = activeFilter === 'All'
     ? products
     : products.filter(function(p) { return p.category === activeFilter })
+
+  useEffect(function() {
+    var timer = setTimeout(function() {
+      var revealEls = document.querySelectorAll('.product-card:not(.revealed)')
+      revealEls.forEach(function(el) {
+        el.classList.add('revealed')
+      })
+    }, 50)
+    return function() { clearTimeout(timer) }
+  }, [activeFilter])
 
   return (
     <section className="products section section-cream" id="products">

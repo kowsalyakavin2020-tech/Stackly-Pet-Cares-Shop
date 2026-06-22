@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+﻿import React, { useEffect } from 'react'
 import './Contact.css'
 
 function Contact() {
@@ -40,7 +40,7 @@ function Contact() {
                   </div>
                   <div>
                     <h4>Address</h4>
-                    <p>123 Pet Street, Animal City, AC 12345</p>
+                    <p>MMR Complex, Chinna Thirupathi (near Chinna Muniyappan Kovil), Salem, Tamil Nadu, 636008</p>
                   </div>
                 </div>
                 <div className="contact-item">

@@ -13,9 +13,6 @@ function Footer() {
 
             <div className="footer-brand">
               <Link to="/" className="footer-logo">
-                <div className="footer-logo-icon">
-                  <span style={{fontSize: '20px'}}>🐾</span>
-                </div>
                 <div>
                   <span className="footer-logo-main">Stackly</span>
                   <span className="footer-logo-sub">Pet Cares and Shop</span>
@@ -27,8 +24,7 @@ function Footer() {
               </p>
               <div className="footer-location">
                 <span className="footer-location-icon">📍</span>
-                <p>No.9, Ambika Complex, 1st Floor, Gokulam Colony, Karanaipudhuchery main road, Urapakkam, Chennai,
-Tamil Nadu, India - 603202</p>
+                <span>MMR Complex, Chinna Thirupathi (near Chinna Muniyappan Kovil), Salem, Tamil Nadu, 636008.</span>
               </div>
               <div className="footer-social">
                 <a href={baseUrl + '#/404'} target="_blank" rel="noreferrer" className="social-btn">

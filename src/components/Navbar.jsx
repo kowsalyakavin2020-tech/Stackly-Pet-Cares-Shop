@@ -5,7 +5,7 @@ import './Navbar.css'
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [cartCount] = useState(0)
+  const [cartCount] = useState(3)
   const location = useLocation()
 
   useEffect(function() {
@@ -39,13 +39,18 @@ function Navbar() {
     return 'hamburger'
   }
 
+  var handleLogoClick = function() {
+    setMenuOpen(false)
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    if (location.pathname === '/') {
+      window.location.reload()
+    }
+  }
+
   return (
     <nav className={getNavClass()}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={function() { setMenuOpen(false) }}>
-          <div className="logo-icon">
-            <span style={{fontSize: '24px'}}>🐾</span>
-          </div>
+        <Link to="/" className="navbar-logo" onClick={handleLogoClick}>
           <div className="logo-text">
             <span className="logo-main">Stackly</span>
             <span className="logo-sub">Pet Cares and Shop</span>

@@ -51,10 +51,11 @@ function Navbar() {
     <nav className={getNavClass()}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={handleLogoClick}>
-          <div className="logo-text">
-            <span className="logo-main">Stackly</span>
-            <span className="logo-sub">Pet Cares and Shop</span>
-          </div>
+          <img
+            src="images/stackly-logo-white.webp"
+            alt="Stackly Logo"
+            style={{ height: '50px', width: 'auto' }}
+          />
         </Link>
 
         <ul className={getMenuClass()}>

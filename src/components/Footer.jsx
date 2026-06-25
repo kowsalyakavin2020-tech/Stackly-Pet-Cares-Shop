@@ -13,10 +13,11 @@ function Footer() {
 
             <div className="footer-brand">
               <Link to="/" className="footer-logo">
-                <div>
-                  <span className="footer-logo-main">Stackly</span>
-                  <span className="footer-logo-sub">Pet Cares and Shop</span>
-                </div>
+                <img
+                  src="images/stackly-logo-white.webp"
+                  alt="Stackly Logo"
+                  style={{ height: '36px', width: 'auto' }}
+                />
               </Link>
               <p className="footer-desc">
                 Your one-stop destination for premium pet care products
